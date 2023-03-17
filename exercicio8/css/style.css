@@ -1,0 +1,98 @@
+* {box-sizing: border-box;}
+/*estilo de body*/
+
+* body{font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.anotacao{  /*distancia da anotação da bordada tela*/
+ background-color: rgb(186, 49, 106);
+color: white;
+padding:10px;
+text-align: center;
+}
+
+.cabecalho{
+    padding: 60px;
+text-align: center;
+background-image:url(../imagens/banner2.png) ;
+background-size:cover;
+color: aliceblue;
+}
+
+/*estilo da barra de navegação */
+
+.barra_nav{
+    display: flex;
+    background-color: rgb(218, 12, 126);
+
+}
+
+.barra_nav a{
+    color: white;
+    padding: 14px 10px ;
+    text-decoration: none;
+    text-align: center;
+}
+.barra_nav a:hover {
+    background-color: rgb(211, 208, 208);
+    color: rgb(0, 0, 0);
+}
+/*criar 2 colunas desiguais (30% e 70%*/
+
+.coluna{
+
+display: flex;
+flex-wrap: wrap;
+}
+
+.lateral{
+   flex: 30%;
+background-color: #d789ce;
+padding: 20px;
+}
+
+.principal {
+    flex:70%;
+    background-color: rgb(210, 210, 210);
+    padding: 20px;
+}
+
+.imagem_falsa{
+    background-color: rgb(197, 39, 145);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+
+.imagem_falsa2{
+    background-color: rgb(183, 40, 109);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.imagem_falsa3{
+    background-color: rgb(185, 37, 121);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.rodape {
+    max-height: fit-content;
+    padding:20px;
+    text-align: center;
+background-color:  rgb(187, 50, 123);}
+
+   
+@media screen and (max-width:500px){
+    .coluna, .barra_nav{
+        flex-direction: column;
+    }
+.cabecalho{
+    background-image: url(../imagens/banner1.png);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+}
