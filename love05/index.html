@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title> 05.03.2023 </title>
+<meta name="description" content="Bem vindos ao site com html5, 
+css3 e jquery e design responsivo"/>
+
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="img/calendario.png" />
+
+<link rel="author" type="text/plain" href="humans.txt" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+<link rel="stylesheet" href="css/estilo.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+	</script>
+
+	<!-- Script para o anuncio rotativo -->
+
+
+
+<script type="text/javascript" src="js/jquery.cycle.all.js"> </script>
+
+<script type="text/javascript">
+$(function () {
+	$(".anuncio ul").cycle({
+		fx: 'fade',
+		speed: 2000,
+		timeout: 3000,
+		})
+	})
+</script>	
+	
+	
+	
+</head>
+<body>
+<!-- Código página facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<header>
+<h1> <a href="index.html"> <img class="fade" alt=""
+src="img/calendario2.png" /> </a> </h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Nós</a></li>
+<li><a href="titulos.html">05.03.2023</a></li>
+<li><a href="lancamentos.html">Trechos</a></li>
+<li><a href="ingressos.html">Contato</a></li>
+</nav>
+</header>
+
+<section id="conteudo">
+<section id="principal">
+<article id="galeria-inicio">
+	<div class="flexslider">
+	   <ul class="slides">
+			<li>
+	    		<a href=""><img src="img/lalala1.jpg" /></a>
+	    	</li>
+	    	<li>
+	    		<a href=""><img src="img/lalala2.jpg" /></a>
+	    		
+	    	</li>
+			<li>
+	    		<a href=""><img src="img/lalala5.jpg" /></a>
+	    		
+	    	</li>
+			<li>
+	    		<a href=""><img src="img/lalala4.jpg" /></a>
+	    
+	    	</li>
+			
+		</ul>
+	</div>
+</article>
+</section>
+<aside> 
+<br>
+
+	<br> <br>
+	<!-- Código anuncio -->
+	
+	
+<div class="anuncio"> 
+
+<ul>
+<li> <a href=""><img src="img/rocket.jfif"    /></a>
+<li> <a href=""><img src="img/rocket2.webp"    /></a>
+<li> <a href=""><img src="img/rocket3.webp"    /></a>
+</ul>
+</div>
+
+
+			
+</aside>
+</section>
+
+<footer>
+Ikke e Geh | 05.03.2023
+</footer>
+
+</body>
+</html>
