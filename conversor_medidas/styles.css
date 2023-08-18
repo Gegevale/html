@@ -1,0 +1,82 @@
+*/ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: Arial, helvetica, sans-serif;
+background-color: #eaeaea;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.container {
+    background-color: rgb(253, 228, 228);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 400px ;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
+}
+
+.input-group label{
+    margin-bottom: 5px;
+font-weight: bold;
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: rgb(255, 28, 111);
+    border-radius: 5px;
+    border: none;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgb(141, 1, 57);
+    color:rgb(255, 255, 255)
+}
+
+.output-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.output-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#message{
+    font-size: 14px;
+    color:rgb(125, 2, 78);
+    margin-top: 10px;
+    text-align: center;
+}
