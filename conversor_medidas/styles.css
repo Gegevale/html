@@ -1,4 +1,4 @@
-body {
+*/ {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ button:hover {
 
 #message{
     font-size: 14px;
-    color:blueviolet;
+    color:rgb(125, 2, 78);
     margin-top: 10px;
     text-align: center;
 }

@@ -59,6 +59,18 @@ switch (toValue) {
 //exibir resultado na caixa de saída
 outputElement.value = result;
 
+//exibir mensagem de conversão
+
+const fromLabel = fromElement.options[fromElement.selectedIndex].text;
+const toLabel = toElement.options[toElement.selectedIndex].text;
+const message = `${
+    inputElement.value
+
+} ${fromLabel} equivalem a ${result} ${toLabel}`;
+messageElement.textContent = message;
+
 }
+
+//exibir resultado na caixa de saída
 
 convertButton.addEventListener("click" , convert);
