@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+        <style>
+            body{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        height: 100vh;
+        background-image: image;
+        background-image: url("imagens/maquiagem.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1920px;
+  }
+
+a{
+    text-decoration: none;
+    font-size: medium;
+}
+
+.box{
+    font-size: 20px;
+    color: white;
+    height: 250;
+    width: 350;
+    border-radius: 10px;
+    background: #c5cfff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 250px;
+}
+
+button {
+    height: 70px;
+    width: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(119, 15, 255);
+    font-weight: 600;
+    
+}
+
+        </style>
+
+<body>
+<div class="box">
+    <p>Amor, vai deixar eu te maquiar?</p>
+    <div class="buttons-container">
+        <button>
+            <a href="fundo.html">Sim</a>
+        </button>
+        <button id="no">Não</button>
+    </div>
+</div>
+</body>
+
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener ('mouseover', function (){
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+
+    </head>
+</html>
