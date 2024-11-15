@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recompensa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/fundo1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(100, 100, 100, 0.6);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            height: 800px;
+            overflow-y: auto;
+        }
+
+        /* Estilização da barra de rolagem */
+        .container::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background-color: #3c004b;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h2, h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* Estilo para vídeos e imagens com o mesmo tamanho */
+        .video, .image {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .video video, .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #2e0049;
+            padding: 20px;
+            text-align: center;
+            font-size: medium;
+            color: #fff;
+        }
+
+        .footer a {
+            margin: 0 10px;
+        }
+
+        .footer img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .footer img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Parabéns! Você resgatou sua recompensa</h2>
+        <h1>Privacy Ge&Reina05</h1>
+        <div class="gallery">
+            <div class="video">
+                <video controls>
+                    <source src="/img/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image">
+                <img src="img/imagem1.jpg" >
+            </div>
+            
+            <div class="video">
+                <video controls>
+                    <source src="img/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image">
+                <img src="img/imagem2.jpg" >
+            </div>
+            
+            <div class="video">
+                <video controls>
+                    <source src="/img/video3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image">
+                <img src="img/imagem3.jpg" >
+            </div>
+
+            <div class="video">
+                <video controls>
+                    <source src="img/video4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image">
+                <img src="img/imagem4.jpg" >
+            </div>
+
+            <div class="video">
+                <video controls>
+                    <source src="img/video5.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video">
+                <video controls>
+                    <source src="img/video6.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Para entrar em contato, mande uma mensagem:</p>
+        <a href="https://wa.me/5511950783071?text=Mande+uma+mensagem+meu+amor+" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/geh.vm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+    </div>
+</body>
+</html>
